@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Multiplication Table</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Dynamic Multiplication Table Generator</h1>
+        
+        <form id="tableForm" class="input-form">
+            <div class="form-group">
+                <label for="multiplierStart">Minimum Row Value:</label>
+                <input type="number" id="multiplierStart" name="multiplierStart" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="multiplierEnd">Maximum Row Value:</label>
+                <input type="number" id="multiplierEnd" name="multiplierEnd" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="multiplicandStart">Minimum Column Value:</label>
+                <input type="number" id="multiplicandStart" name="multiplicandStart" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="multiplicandEnd">Maximum Column Value:</label>
+                <input type="number" id="multiplicandEnd" name="multiplicandEnd" required>
+            </div>
+            
+            <button type="submit" class="submit-btn">Generate Table</button>
+        </form>
+
+        <div id="errorMessage" class="error-message"></div>
+        
+        <div id="tableContainer" class="table-container">
+            <table id="multiplicationTable"></table>
+        </div>
+    </div>
+</body>
+</html>
